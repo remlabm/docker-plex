@@ -22,8 +22,8 @@ RUN rm -f /tmp/plexmediaserver_0.9.9.13.525-197d5ed_amd64.deb
 RUN usermod -u 999 plex
 RUN usermod -g 100 plex
 
-VOLUME /config
-VOLUME /data
+VOLUME /mnt/config
+VOLUME /mnt/data
 
 EXPOSE 32400
 
